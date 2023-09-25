@@ -1,0 +1,70 @@
+<!-- This HTML file creates various fields for building the To - Do Application -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO APPLICATION</title>
+    <script src="https://kit.fontawesome.com/a36d9d152a.js" crossorigin="anonymous"></script>
+    <script src="scripts/todo.js" defer></script> <!-- Leverages the todo.js file for handling different operations-->
+    <link rel="stylesheet" href="dist/main.css"> <!-- Uses the SCSS file for handling the page layout-->
+</head>
+
+<body>
+
+    <h1>TO - DO APPLICATION</h1>
+
+    <!-- As user clicks on this button, a form will be displayed and user can add a new task-->
+    <button class="add_task_button" onclick="loadForm();">Add New To-do Task</button><br><br>
+    <div id="wrapContent" class="wrapContent">
+
+        <div id="todo_form" class="todo_form">
+
+            <!-- This field will hold the title of the To-do task -->
+            <div id="fields" class="fields">
+                <label for="title" class="title">Title: </label>
+                <input type="text" name="title" id="title" placeholder="Task Title ..." required>
+            </div>
+            <br>
+
+            <!-- This field will hold the description of the To-do task -->
+            <div id="fields" class="fields">
+                <label for="description" class="description">Description: </label>
+                <input type="text" name="description" id="description" placeholder="Task Description ..." required>
+            </div>
+            <br>
+
+            <!-- This field will hold the date of the To-do task -->
+            <div id="fields" class="fields">
+                <label for="due_date" class="due_date">Due Date: </label>
+                <input type="date" name="date" id="date" placeholder="Task Date ..." required>
+
+            </div>
+            <br>
+
+            <!-- This field will hold the time of the To-do task -->
+            <div id="fields" class="fields">
+                <label for="due_time" class="due_time">Due Time: </label>
+                <input type="time" name="time" id="time" placeholder="Task Time ..." required>
+            </div>
+            <br>
+
+            <div>
+                <button class="saveTask" id="saveTask">Save To-Do</button>
+            </div>
+
+            <h5 id="errorMessage"></h5>
+        </div>
+    </div>
+
+    <!-- Used for creating multiple todo tasks which are dyniamically handled using the JS -->
+    <div id="listofToDoTask" class="listofToDoTask">
+        <ul id="taskList" class="taskList">
+
+        </ul>
+    </div>
+</body>
+
+</html>

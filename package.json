@@ -1,0 +1,22 @@
+{
+  "name": "assignment-6-priyal-vimal-gudhka",
+  "version": "1.0.0",
+  "description": "Web Design & User Experience Assignment 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2022/assignment-6-Priyal-Vimal-Gudhka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2022/assignment-6-Priyal-Vimal-Gudhka/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2022/assignment-6-Priyal-Vimal-Gudhka#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
